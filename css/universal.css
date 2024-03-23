@@ -12,6 +12,7 @@ body {
     width: 100vw;
     overflow-x: hidden;
     justify-content: center;
+    color: black;
 }
 
 #navbar {
