@@ -1,0 +1,384 @@
+:root {
+    --bg: #ffffff;
+    --sec: #eeeeee;
+    --tri: #dddddd;
+}
+
+body {
+    position: relative;
+    background-color: var(--tri);
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    overflow-x: hidden;
+    justify-content: center;
+}
+
+#navbar {
+    position: fixed;
+    display: flex;
+    background-color: var(--bg);
+    width: 100vw;
+    height: 10vh;
+    margin: 0;
+    z-index: 2;
+}
+
+#menu-button-container {
+    display: flex;
+    width: 10vh;
+    height: 10vh;
+    overflow: hidden;
+}
+
+#menu-button {
+    width: 50%;
+    height: 50%;
+    margin: auto;
+    object-fit: contain;
+    cursor: pointer;
+}
+
+#logo-container {
+    display: flex;
+    width: auto;
+    height: 10vh;
+    overflow: hidden;
+    margin: auto;
+}
+
+#business-logo {
+    width: calc(100% - 10vh);
+    height: 100%;
+    object-fit: contain;
+}
+
+#sidebar-menu {
+    position: fixed;
+    display: flex;
+    width: 240px;
+    height: 100%;
+    top: 0;
+    left: -240px;
+    background-color: var(--bg);
+    transition: 0.5s;
+    z-index: 10;
+}
+
+#options-container {
+    display: inline;
+    width: 70%;
+    height: 100%;
+    padding: 10px;
+}
+
+#close-sidebar-button {
+    display: flex;
+    width: 30px;
+    height: 30px;
+    overflow: hidden;
+    padding: 0;
+    margin: 7px;
+    border: none;
+    background-color: var(--bg);
+    cursor: pointer;
+}
+
+#close-sidebar-button:hover {
+    transform: scale(105%);
+}
+
+.sidebar-item {
+    display: flex;
+    width: 100%;
+    color: #292929;
+    text-decoration: none;
+    font-size: 16pt;
+    font-weight: bold;
+    margin-top: 2vh;
+    line-height: 30px;
+}
+
+.sidebar-icon {
+    display: flex;
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+}
+
+#hero-container {
+    display: flex;
+    min-height: 30vh;
+    max-width: 700px;
+    overflow: hidden;
+    color: white;
+    background-color: black;
+    text-align: center;
+    margin: 0 auto 0 auto;
+    justify-content: center;
+}
+
+#hero-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    opacity: 30%;
+    width: 100vw;
+    max-width: 700px;
+    height: 100%;
+    z-index: 0;
+    object-fit: cover;
+}
+
+#contact {
+    position: relative;
+    max-width: 100vw;
+    min-width: 180px;
+    height: 4vh;
+    margin: 2vh auto 2vh auto;
+    font-weight: bold;
+    font-size: 14pt;
+    opacity: 100%;
+    background-color: var(--bg);
+    border: none;
+    transition: 0.5s;
+}
+
+#contact:hover {
+    transform: scale(105%);
+}
+
+#hero-text-container {
+    display: inline-block;
+    min-height: 30vh;
+    max-width: 700px;
+}
+
+#info-banner {
+    display: flex;
+    height: 4vh;
+    line-height: 5vh;
+    max-width: 700px;
+    font-weight: bold;
+    font-size: 10pt;
+    justify-content: center;
+    background-color: var(--bg);
+    margin: 0 auto 0 auto;
+}
+
+#services-container {
+    display: block;
+    position: relative;
+    background-color: var(--bg);
+    max-width: 700px;
+    width: 100vw;
+    min-height: 30vh;
+    padding: 20px;
+    box-sizing: border-box;
+    margin: 0 auto;
+    justify-content: center;
+}
+
+.title {
+    height: 40px;
+    font-weight: bolder;
+    font-size: 18pt;
+}
+
+.service-container {
+    display: inline-block;
+    width: calc(100vw - 40px);
+    height: 160px;
+    margin-top: 20px;
+}
+
+.service-title {
+    font-size: 10pt;
+}
+
+.service-description {
+    display: flex;
+    width: 100%;
+    height: 120px;
+    margin-top: 10px;
+    overflow: hidden;
+}
+
+.service-image {
+    display: flex;
+    width: 120px;
+    height: 120px;
+    max-width: 300px;
+    max-height: 300px;
+    object-fit: cover;
+}
+
+.service-text {
+    display: flex;
+    max-width: 200px;
+    font-size: 10pt;
+    margin: 0 10px auto 10px;
+}
+
+.list-of-services {
+    display: flex;
+}
+
+@media screen and (max-width: 700px) {
+    .list-of-services {
+        display: inline-block;
+    }
+}
+
+#reviews-section {
+    position: relative;
+    display: flex;
+    width: 500vw;
+    max-width: 3500px;
+    height: 300px;
+    margin: 0;
+    right: 0px;
+    transition: 0.5s ease;
+    background-color: var(--sec);
+}
+
+.review-body {
+    display: inline;
+    width: 250px;
+    height: 200px;
+    background-color: var(--bg);
+    margin: 50px auto 0 auto;
+}
+
+.review-author {
+    display: flex;
+    width: 100%;
+    font-weight: bold;
+    font-size: 12pt;
+    margin: 10px;
+}
+
+.five-stars {
+    display: inline;
+    width: 80px;
+    margin: 0 10px 0 10px;
+}
+
+.review-timestamp {
+    font-size: 8pt;
+    color: #696969;
+    margin-top: 3px;
+}
+
+.review-text {
+    margin: 10px 10px 0 10px;
+    font-size: 10pt;
+}
+
+#review-slideshow {
+    position: absolute;
+    display: flex;
+    width: 100%;
+    height: 30px;
+    justify-content: center;
+    bottom: 10px;
+}
+
+.slideshow-button {
+    width: 15px;
+    height: 15px;
+    margin: 10px;
+    border: none;
+    border-radius: 50%;
+    background-color: var(--tri);
+    cursor: pointer;
+}
+
+.review-container {
+    display: flex; 
+    width: 100vw;
+    max-width: 700px; 
+    height: 100%; 
+}
+
+#request-quote-button {
+    display: block;
+    width: 200px;
+    height: 40px;
+    justify-content: center;
+    border: none;
+    font-weight: bold;
+    font-size: 14pt;
+    margin: 10px auto 10px auto;
+    border: 1pt solid black;
+    background-color: var(--bg);
+    cursor: pointer;
+}
+
+#request-quote-button:hover {
+    transform: scale(103%);
+}
+
+#about-us-section {
+    display: block;
+    width: 100vw;
+    max-width: 700px;
+    height: auto;
+    background-color: var(--bg);
+    box-sizing: border-box;
+    padding: 20px;
+    margin: 0 auto 0 auto;
+}
+
+#about-us-image {
+    display: block;
+    width: 30vw;
+    max-width: 160px;
+    height: 35vw;
+    max-height: 180px;
+    object-fit: cover;
+    margin-right: 30px;
+}
+
+.description {
+    font-size: 9pt;
+}
+
+#contact-section {
+    display: block;
+    box-sizing: border-box;
+    width: 100vw;
+    max-width: 700px;
+    height: auto;
+    background-color: var(--bg);
+    padding: 20px;
+    margin: auto;
+}
+
+.subtitle {
+    font-weight: bold;
+}
+
+.field-container {
+    width: 100vw;
+    margin-top: 20px;
+}
+
+#socials-container {
+    display: flex;
+    width: calc(100% - 40px);
+    max-width: 660px;
+    box-sizing: border-box;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.social-media-link {
+    display: flex;
+    width: 50px;
+    height: 50px;
+    background-color: #292929;
+    margin: auto;
+    border: none;
+    box-shadow: 0 0 10px rgb(0, 0, 0, 0.3);
+}
