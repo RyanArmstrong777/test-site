@@ -28,20 +28,23 @@ a {
     margin: 0;
     z-index: 2;
     background-color: var(--bg);
+    justify-content: center;
 }
 
 #menu-button-container {
+    position: absolute;
+    top: 0;
+    left: 0;
     display: flex;
-    width: 10vh;
+    width: 7vh;
     height: 10vh;
     overflow: hidden;
-    background-color: var(--bg);
 }
 
 #menu-button {
     width: 7vh;
     height: 7vh;
-    margin: 10px;
+    margin-top: 10px;
     object-fit: contain;
     cursor: pointer;
 }
@@ -52,6 +55,7 @@ a {
     height: auto;
     overflow: hidden;
     margin-left: 0;
+    justify-content: center;
 }
 
 #business-logo {
@@ -141,18 +145,22 @@ a {
 }
 
 #contact {
+    display: flex;
     position: relative;
-    max-width: 100vw;
-    min-width: 180px;
+    width: 50vw;
+    max-width: 250px;
     height: 4vh;
+    max-height: 80px;
     margin: 2vh auto 2vh auto;
     font-weight: bold;
-    font-size: 14pt;
+    font-size: 16pt;
     opacity: 100%;
     color: black;
     background-color: var(--bg);
     border: none;
     transition: 0.5s;
+    justify-content: center;
+    line-height: 4vh;
 }
 
 #contact:hover {
@@ -382,10 +390,9 @@ a {
 #socials-container {
     display: flex;
     width: 90vw;
-    max-width: 660px;
+    max-width: 700px;
     box-sizing: border-box;
-    justify-content: center;
-    margin: 20px auto 0 auto;
+    margin: 20px auto 0 0;
 }
 
 .social-media-link {
@@ -393,7 +400,7 @@ a {
     width: 50px;
     height: 50px;
     background-color: #292929;
-    margin: 0 10px 0 10px;
+    margin-right: 20px;
     border: none;
     box-shadow: 0 0 10px rgb(0, 0, 0, 0.3);
 }
