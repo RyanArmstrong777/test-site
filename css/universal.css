@@ -121,15 +121,14 @@ body {
 }
 
 #hero-background {
-    position: absolute;
-    top: 0;
-    left: 0;
+    position: relative;
     display: flex;
     opacity: 30%;
     width: 100vw;
     max-width: 700px;
-    height: 100%;
+    min-height: 30vh;
     z-index: 0;
+    box-sizing: border-box;
     object-fit: cover;
 }
 
@@ -152,7 +151,9 @@ body {
 }
 
 #hero-text-container {
+    position: absolute;
     display: inline-block;
+    margin: auto;
     min-height: 30vh;
     max-width: 700px;
 }
