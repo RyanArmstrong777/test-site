@@ -30,7 +30,6 @@ body {
     display: flex;
     width: 10vh;
     height: 10vh;
-    background-color: green;
     overflow: hidden;
 }
 
@@ -44,8 +43,8 @@ body {
 
 #logo-container {
     display: flex;
-    width: auto;
-    height: 10vh;
+    width: 80vw;
+    height: auto;
     overflow: hidden;
     margin-left: 0;
 }
@@ -133,6 +132,7 @@ body {
     top: 0;
     left: 0;
     object-fit: cover;
+    pointer-events: none;
 }
 
 #contact {
@@ -144,6 +144,7 @@ body {
     font-weight: bold;
     font-size: 14pt;
     opacity: 100%;
+    color: black;
     background-color: var(--bg);
     border: none;
     transition: 0.5s;
