@@ -30,6 +30,7 @@ body {
     display: flex;
     width: 10vh;
     height: 10vh;
+    background-color: green;
     overflow: hidden;
 }
 
