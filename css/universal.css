@@ -15,6 +15,10 @@ body {
     color: black;
 }
 
+a {
+    text-decoration: none;
+}
+
 #navbar {
     position: fixed;
     display: flex;
