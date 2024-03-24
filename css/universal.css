@@ -375,7 +375,7 @@ body {
 
 #socials-container {
     display: flex;
-    width: calc(100vw - 40px);
+    width: 90vw;
     max-width: 660px;
     box-sizing: border-box;
     justify-content: center;
