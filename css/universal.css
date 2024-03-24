@@ -47,6 +47,7 @@ body {
     width: auto;
     height: 10vh;
     overflow: hidden;
+    margin-left: 0;
 }
 
 #business-logo {
